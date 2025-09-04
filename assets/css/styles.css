@@ -50,8 +50,17 @@ a {
     overflow: hidden;
 }
 /* ======== Header ======== */
-.header {
+.fixed-header {
+    background: #e6f0ff;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background: #e6f0ff;
     height: 100vh;
 }
@@ -59,7 +68,7 @@ a {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -600,7 +609,6 @@ a {
 }
 
 .footer .social-link {
-    /* margin-left: 32px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -613,9 +621,6 @@ a {
 .footer .social-link + .social-link {
     margin-left: 16px;
 }
-/* .footer .social-link:first-child {
-    margin-left: 0;
-} */
 
 .footer .social-link img {
     padding: 7px;
